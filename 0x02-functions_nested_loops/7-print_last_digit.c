@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit - print the last digit of number 
+ * print_last_digit - print the last digit of number
  * @num: the number that we will git the last digit of it
  * Return: zero if success
  */
