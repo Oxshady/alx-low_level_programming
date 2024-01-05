@@ -30,10 +30,10 @@ void print_to_98(int n)
 	{
 		_putchar('-'), _putchar('0' + (n * -1));
 	}
-	else if (n < -9 && n > -100)
+	else if ((n < -9) && (n > -100))
 	{
 		_putchar('-'), _putchar('0' + ((n * -1) / 10));
-		_putchar('0' + ((n * -1) % 10);
+		_putchar('0' + ((n * -1) % 10));
 	}
 	else if (n < 0 && n < -99)
 	{
