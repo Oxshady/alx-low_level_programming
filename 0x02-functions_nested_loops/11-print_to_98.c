@@ -41,7 +41,7 @@ void print_to_98(int n)
 		_putchar('0' + (((n * -1) / 10) % 10)), _putchar('0' + ((n * -1) % 10));
 	}
 	if (n == 98)
-		putchar('\n');
+		_putchar('\n');
 	else
 		_putchar(','), _putchar(' ');
 }
