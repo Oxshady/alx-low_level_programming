@@ -13,8 +13,11 @@ void times_table(void)
 		{
 			if ((x * y) < 10)
 			{
+				if (y != 0)
+				{
 				_putchar(' ');
 				_putchar(' ');
+				}
 				_putchar('0' + (x * y));
 				if (y < 9)
 					_putchar(',');
