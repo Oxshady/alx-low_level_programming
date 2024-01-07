@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	long int num1 = 1, num2 = 2, fibo;
+	long int num1 = 0, num2 = 1, fibo;
 	int i;
 
-	for (i = 0; i < 48; i++)
+	for (i = 0; i < 50; i++)
 	{
 		fibo = num1 + num2;
 		num1 = num2;
@@ -17,7 +17,7 @@ int main(void)
 		{
 			fibo *= -1;
 		}
-		if (i < 47)
+		if (i < 49)
 			printf("%li, ", fibo);
 		else
 			printf("%li\n", fibo);
