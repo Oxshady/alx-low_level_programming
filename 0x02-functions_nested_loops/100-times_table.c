@@ -23,11 +23,11 @@ void print_times_table(int n)
 				{
 					if ((counter1 * counter2) < 9)
 						printf("%i,   ", (counter1 * counter2));
-					else if (((counter1 * counter2) >= 9) && ((counter1 * counter2) < 100))
+					else if (((counter1 * counter2) >= 9) && ((counter1 * counter2) < 99))
 					{
 						printf("%i,  ", (counter1 * counter2));
 					}
-					else if ((counter1 * counter2) > 99)
+					else if ((counter1 * counter2) >= 99)
 					{
 						printf("%i, ", (counter1 * counter2));
 					}
