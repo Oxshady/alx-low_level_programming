@@ -1,4 +1,8 @@
 #include<stdio.h>
+/**
+ * main - print the first 50 fibonacci
+ * Return: zero if success
+ */
 int main(void)
 {
 	long int num1 = 1 , num2 = 2 , fibo;
