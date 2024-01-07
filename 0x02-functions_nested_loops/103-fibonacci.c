@@ -15,6 +15,6 @@ int main(void)
 		if (fibo % 2 == 0)
 			sumE += fibo;
 	}
-	printf("%li", sumE);
+	printf("%li\n", sumE);
 	return (0);
 }
