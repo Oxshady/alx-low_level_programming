@@ -1,5 +1,9 @@
 #include <stdio.h>
-int main(void)
+/**
+ * main -  sum of all the multiples of 3 or 5 below 1024
+ * Return: zero if success 
+ */
+ int main(void)
 {
 	int natural = 1, sum = 0;
 
@@ -9,4 +13,5 @@ int main(void)
 			sum += natural;
 	}
 	printf("%i", sum);
+	return (0);
 }
