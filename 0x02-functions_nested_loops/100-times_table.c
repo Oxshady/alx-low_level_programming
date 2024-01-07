@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * print_times_table - print the n times table starting form 0
+ * @n: the n that we will print it's times table
+ * Return: void
+ */
 void print_times_table(int n)
 {
 	int counter1, counter2;
@@ -16,7 +21,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					if ((counter1 * counter2) < 10)
+					if ((counter1 * counter2) < 9)
 						printf("%i,   ", (counter1 * counter2));
 					else if (((counter1 * counter2) >= 10) && ((counter1 * counter2) < 100))
 					{
