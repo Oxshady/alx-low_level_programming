@@ -17,7 +17,10 @@ int main(void)
 		{
 			fibo *= -1;
 		}
-		printf("%li ",fibo);
+		if (i < 49)
+			printf("%li, ", fibo);
+		else
+			printf("%li\n", fibo);
 	}
 	return (0);
 }
