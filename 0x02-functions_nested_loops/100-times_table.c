@@ -23,7 +23,8 @@ void print_times_table(int n)
 				{
 					if ((counter1 * (counter2 + 1)) < 10)
 						printf("%i,   ", (counter1 * counter2));
-					else if (((counter1 * (counter2 + 1)) >= 10) && ((counter1 * (counter2 + 1)) < 100))
+					else if (((counter1 * (counter2 + 1)) >= 10)
+						&& ((counter1 * (counter2 + 1)) < 100))
 					{
 						printf("%i,  ", (counter1 * counter2));
 					}
