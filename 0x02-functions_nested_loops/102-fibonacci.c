@@ -8,16 +8,16 @@ int main(void)
 	long int num1 = 1, num2 = 2, fibo;
 	int i;
 
-	for(i = 0; i < 50; i++ )
+	for (i = 0; i < 48; i++)
 	{
 		fibo = num1 + num2;
 		num1 = num2;
 		num2 = fibo;
-		if(fibo < 0)
+		if (fibo < 0)
 		{
 			fibo *= -1;
 		}
-		if (i < 49)
+		if (i < 47)
 			printf("%li, ", fibo);
 		else
 			printf("%li\n", fibo);
