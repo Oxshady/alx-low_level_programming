@@ -18,7 +18,7 @@ void more_numbers(void)
 			}
 			else
 				_putchar('0' + num);
-			if ((num == 14) && (i != 9))
+			if (num == 14)
 				_putchar('\n');
 		}
 	}
