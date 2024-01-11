@@ -24,7 +24,8 @@ int main(void)
 			printf("%i", i);
 		if (i == 100)
 			printf("\n");
-		printf(" ");
+		else
+			printf(" ");
 	}
 	return (0);
 }
