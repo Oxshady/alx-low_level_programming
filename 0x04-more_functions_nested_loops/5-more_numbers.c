@@ -21,7 +21,7 @@ void more_numbers(void)
 			_putchar('0' + firstn);
 			if (num > 9)
 				_putchar('0' + secondn);
-			if (num == 14 && i != 9)
+			if (num == 14)
 				_putchar('\n');
 		}
 	}
