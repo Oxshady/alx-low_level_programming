@@ -5,16 +5,16 @@
 */
 void print_line(int n)
 {
-	int i = 0;
+	int i = 1;
 
 	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		for (; i < n; i++)
+		for (; i <= n; i++)
 		{
 			_putchar('-');
-			if (i == (n - 1))
+			if (i == n)
 				_putchar('\n');
 		}
 	}
