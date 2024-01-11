@@ -23,9 +23,10 @@ int main(void)
 		else
 			printf("%i", i);
 		if (i == 100)
-			_putchar('\n');
+			printf("\n");
+
 		else
-			_putchar(' ');
+			printf("\n");
 	}
 	return (0);
 }
