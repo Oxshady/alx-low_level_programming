@@ -5,8 +5,8 @@
 */
 void print_triangle(int size)
 {
-	int row,spaces, slash;
-	
+	int row, spaces, slash;
+
 	if (size <= 0)
 		_putchar('\n');
 	else
