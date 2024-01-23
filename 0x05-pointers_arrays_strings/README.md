@@ -1,0 +1,1 @@
+# Solving problems on pointers and arrays and strings in c programming language
