@@ -19,8 +19,10 @@ void print_array(int *a, int n)
 		if (a[i] == (a[n - 1]))
 			printf("\n");
 		else
+		{
 			printf(",");
 			printf(" ");
+		}
 	}
 	}
 }
