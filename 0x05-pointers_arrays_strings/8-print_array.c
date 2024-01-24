@@ -18,20 +18,20 @@ void print_array(int *a, int n)
 		if (a[i] < 10)
 		{
 			_putchar('0' + n);
-			_putchar('\n');
+			_putchar(','), _putchar(' ');
 		}
 		else if (a[i] > 9 && a[i] < 100)
 		{
 			_putchar('0' + (a[i] / 10));
 			_putchar('0' + (a[i] % 10));
-			_putchar('\n');
+			_putchar(','), _putchar(' ');
 		}
 		else if (a[i] > 99 && a[i] < 1000)
 		{
 			_putchar('0' + (a[i] / 10) / 10);
 			_putchar('0' + (a[i] / 10) % 10);
 			_putchar('0' + (a[i] % 10));
-			_putchar('\n');
+			_putchar(','), _putchar(' ');
 		}
 		else if (a[i] > 999 && a[i] < 10000)
 		{
@@ -39,7 +39,6 @@ void print_array(int *a, int n)
 			_putchar('0' + ((a[i] / 10) / 10) % 10);
 			_putchar('0' + (a[i] / 10) % 10);
 			_putchar('0' + (a[i] % 10));
-			_putchar('\n');
 		}
 	}
 }
