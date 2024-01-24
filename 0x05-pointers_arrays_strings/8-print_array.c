@@ -17,9 +17,10 @@ void print_array(int *a, int n)
 	{
 		printf("%i", a[i]);
 		if (a[i] == (a[n - 1]))
-			_putchar('\n');
+			printf("\n");
 		else
-			_putchar(','), _putchar(' ');
+			printf(",");
+			printf(" ");
 	}
 	}
 }
