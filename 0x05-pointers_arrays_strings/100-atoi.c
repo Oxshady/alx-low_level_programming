@@ -20,9 +20,19 @@ int _atoi(char *s)
 	for (; s[x] != 0; x++)
 	{
 		if (s[x] == '-' && (s[x + 1] >= 48 && s[x + 1] <= 57))
-			sign = -1;
+		{
+			if (sign == -1)
+				sign = 1;
+			else
+				sign = -1;
+		}
 		else if (s[x] == '+' && (s[x + 1] >= 48 && s[x + 1] <= 57))
-			sign = 1;
+		{	
+			if (sign == -1)
+				sign = -1;
+			else
+				sign = 1;
+		}
 	}
 	result = result * sign;
 	return (result);
