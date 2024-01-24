@@ -6,7 +6,9 @@
 */
 void print_array(int *a, int n)
 {
-	if (n > 0)
+	if (n <= 0)
+		_putchar(' '), _putchar(' ');
+	else
 	{
 	int i = 0;
 
