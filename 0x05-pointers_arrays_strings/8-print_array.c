@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_array - is a function that print the array of integers using putchar
+ * print_array - is a function that print the array of integers
  * @a: address of the first location of array
  * @n: the size of array
 */
