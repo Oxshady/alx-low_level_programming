@@ -15,7 +15,7 @@ int _atoi(char *s)
 	{
 		if (s[x] == '-' && (s[x + 1] >= 48 && s[x + 1] <= 57))
 			sign = -1;
-		else if(s[x] == '+' && (s[x + 1] >= 48 && s[x + 1] <= 57))
+		else if(s[x] == '+' && ((s[x + 1] >= 48 && s[x + 1] <= 57) || s[x + i] == " "))
 			sign = 1;
 	}
 	result = result * sign;
