@@ -8,6 +8,8 @@ void print_array(int *a, int n)
 {
 	if (n <= 0)
 		_putchar('\n');
+	else
+	{
 	int i = 0;
 
 	for (; i < n; i++)
@@ -43,5 +45,6 @@ void print_array(int *a, int n)
 			_putchar('\n');
 		else
 			_putchar(','), _putchar(' ');
+	}
 	}
 }
