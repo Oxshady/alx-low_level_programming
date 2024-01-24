@@ -5,21 +5,17 @@
 */
 void rev_string(char *s)
 {
-	int i = 0, y = 0, x = 0;
+	int i = 0, y = 0;
 
-	while ((*(s + x) != 0))
-	{
-		x++;
-	}
-	char arr[x - 1];
-
+	char arr[100];
+	
 	while ((*(s + i) != 0))
 	{
 		arr[i] = s[i];
 		i++;
 	}
 	i -= 1;
-	while (i >= 0)
+	while(i >= 0)
 	{
 		s[y] = arr[i];
 		i--;
