@@ -33,16 +33,6 @@ void print_array(int *a, int n)
 			_putchar('0' + ((a[i] / 10) / 10) % 10);
 			_putchar('0' + (a[i] / 10) % 10), _putchar('0' + (a[i] % 10));
 		}
-		else if (a[i] > 999999)
-		{
-			_putchar('0' + (a[i] / 10) / 10 / 10 / 10 / 10 / 10);
-			_putchar('0' + (a[i] / 10) / 10 / 10 / 10 / 10 % 10);
-			_putchar('0' + (a[i] / 10) / 10 / 10 / 10 % 10);
-			_putchar('0' + (a[i] / 10) / 10 / 10 % 10);
-			_putchar('0' + (a[i] / 10) / 10 % 10);
-			_putchar('0' + (a[i] / 10) % 10);
-			_putchar('0' + (a[i] % 10));
-		}
 		if (a[i] == (a[n - 1]))
 			_putchar('\n');
 		else
