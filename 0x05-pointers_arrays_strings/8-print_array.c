@@ -7,7 +7,7 @@
 void print_array(int *a, int n)
 {
 	if (n <= 0)
-		_putchar(' '), _putchar(' ');
+		_putchar('\n');
 	else
 	{
 	int i = 0;
