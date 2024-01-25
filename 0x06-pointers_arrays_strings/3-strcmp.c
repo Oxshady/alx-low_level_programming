@@ -28,6 +28,6 @@ int _strcmp(char *s1, char *s2)
 	if (x1 > x2)
 		result = -15;
 	if (x1 == x2)
-		result;
+		result = 0;
 	return (result);
 }
