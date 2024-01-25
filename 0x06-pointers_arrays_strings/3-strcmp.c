@@ -7,7 +7,7 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, result = 0;
+	int i = 0, result = 0, x1 = 0, x2 = 0;
 
 	while (s1[i] != '\0' && s2[i] != '\0')
 	{
@@ -19,11 +19,15 @@ int _strcmp(char *s1, char *s2)
 			result = -15;
 		i++;
 	}
-	if (s1[i] != '\0' && s2[i] == '\0')
+	while (s1[x1] != '\0')
+		x1++;
+	while (s1[x2] != '\0')
+		x2++;
+	if (x2 > x1)
 		result = 15;
-	else if (s1[i] == '\0' && s2[i] != '\0')
+	if (x1 > x2)
 		result = -15;
-	else
-		result = 0;
+	if (x1 == x2)
+		result;
 	return (result);
 }
