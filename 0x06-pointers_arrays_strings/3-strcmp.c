@@ -21,11 +21,11 @@ int _strcmp(char *s1, char *s2)
 	}
 	while (s1[x1] != '\0')
 		x1++;
-	while (s1[x2] != '\0')
+	while (s2[x2] != '\0')
 		x2++;
-	if (x2 > x1)
-		result = 15;
 	if (x1 > x2)
+		result = 15;
+	if (x1 < x2)
 		result = -15;
 	if (x1 == x2)
 		result = 0;
