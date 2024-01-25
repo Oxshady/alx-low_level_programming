@@ -3,7 +3,7 @@
  * _strcmp - compare two strings lexicographically
  * @s1: first string
  * @s2: second string
- * Return: 15 if s1 is greatest -15 if s1 is smallest 0 if both are equal
+ * Return: 15 if s1 is greatest -15 if  s1 is smallest 0 if both are equal
 */
 int _strcmp(char *s1, char *s2)
 {
