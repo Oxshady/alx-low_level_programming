@@ -1,0 +1,1 @@
+# problem solving on static libraries and linking process in c
