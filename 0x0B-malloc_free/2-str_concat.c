@@ -14,7 +14,10 @@ char *str_concat(char *s1, char *s2)
 	char *conc;
 
 	if (s1 == NULL && s2 == NULL)
-		return " ";
+	{
+		conc = (char *)malloc(sizeof(char));
+		return conc;
+	}
 	if (s1 == NULL && s2 != NULL)
 	{
 		while (s2[x2] != '\0')
