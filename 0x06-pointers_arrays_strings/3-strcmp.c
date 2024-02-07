@@ -14,7 +14,7 @@ int _strcmp(char *s1, char *s2)
 	while (s2[y] != '\0')
 		y++;
 	if (*s1 == '\0')
-		return (y);
+		return (y * -1);
 	if (*s2 == '\0')
 		return (x);
 	while (s1[i] != '\0' || s2[i] != '\0')
