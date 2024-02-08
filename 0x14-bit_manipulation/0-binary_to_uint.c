@@ -8,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int conv = 0, digit;
-	int length = 0, i, ii;
+	int length = 0, ii;
 	char *ptr;
 
 	if (b == NULL)
@@ -25,15 +25,15 @@ unsigned int binary_to_uint(const char *b)
 		ptr[ii++] = b[length];
 	}
 	ptr[ii] = '\0';
-	for (i = 0; ptr[i] != '\0'; i++)
+	for (ii = 0; ptr[ii] != '\0'; ii++)
 	{
-		if (ptr[i] != '0' && ptr[i] != '1')
+		if (ptr[ii] != '0' && ptr[ii] != '1')
 		{
 			free(ptr);
 			return (0);
 		}
-		digit = ptr[i] - '0';
-		conv |= (digit << i);
+		digit = ptr[ii] - '0';
+		conv |= (digit << ii);
 	}
 	free(ptr);
 	return (conv);
