@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (b[length] != '\0')
 		length++;
-	*ptr = (char *)malloc(length + 1);
+	ptr = (char *)malloc(length + 1);
 	if (ptr == NULL)
 		return (0);
 	ii = 0;
@@ -29,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (ptr[i] != '0' && ptr[i] != '1')
 		{
-			(ptr);
+			free(ptr);
 			return (0);
 		}
 		digit = ptr[i] - '0';
