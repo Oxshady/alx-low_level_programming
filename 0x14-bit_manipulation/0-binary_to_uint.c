@@ -11,12 +11,12 @@ unsigned int binary_to_uint(const char *b)
 	int length = 0, ii;
 	char *ptr;
 
-	if (b == 0)
+	if (b == NULL)
 		return (0);
 	while (b[length] != '\0')
 		length++;
 	ptr = (char *)malloc(length + 1);
-	if (ptr == 0)
+	if (ptr == NULL)
 		return (0);
 	ii = 0;
 	while (length >= 0)
