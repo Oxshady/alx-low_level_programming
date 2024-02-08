@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * binary_to_uint - function that converts a binary number to an unsigned int
- * @b: the charachter we will check if it binary to convert;
+ * @b: the charachter we will check if it binary to convert
  * Return: uns integer that represent in mem the bin in str after converted
  */
 unsigned int binary_to_uint(const char *b)
@@ -38,3 +38,4 @@ unsigned int binary_to_uint(const char *b)
 	free(ptr);
 	return (conv);
 }
+
