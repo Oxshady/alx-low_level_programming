@@ -30,6 +30,5 @@ void print_binary(unsigned long int n)
 		for (x = 18; x >= 0; x--)
 			_putchar(((n >> x) & 1) + '0');
 	}
-	
 }
 
