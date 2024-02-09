@@ -38,3 +38,4 @@ unsigned int binary_to_uint(const char *b)
 	free(ptr);
 	return (conv);
 }
+
