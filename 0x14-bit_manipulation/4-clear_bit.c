@@ -1,5 +1,5 @@
 /**
- * clear - function that sets the value of a bit to 0 at a given index
+ * clear_bit - function that sets the value of a bit to 0 at a given index
  * @n: pointer to block of bytes of unsinged type
  * @index: the index of the required bit
  * Return: the desired bit
