@@ -6,19 +6,30 @@
 */
 void print_binary(unsigned long int n)
 {
-	int bit = sizeof(n) * 8, outp;
+	int x;
 
-	while (bit)
+	if (n == 1 || n == 0)
+		_putchar(((n >> 0) & 1) + '0');
+	else if (n <= 255)
 	{
-		if (n & 1L << --bit)
-		{
-			_putchar('1');
-			outp++;
-		}
-		else if (outp)
-			_putchar('0');
+		for (x = 6; x >= 0; x--)
+			_putchar(((n >> x) & 1) + '0');
 	}
-	if (!outp)
-		_putchar('0');
+	else if (n <= 65536)
+	{
+		for (x = 10; x >= 0; x--)
+			_putchar(((n >> x) & 1) + '0');
+	}
+	else if (n <= 16777216)
+	{
+		for (x = 14; x >= 0; x--)
+			_putchar(((n >> x) & 1) + '0');
+	}
+		else if (n <= 4294967296)
+	{
+		for (x = 18; x >= 0; x--)
+			_putchar(((n >> x) & 1) + '0');
+	}
+	
 }
 
