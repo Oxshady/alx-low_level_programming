@@ -15,10 +15,21 @@ void print_binary(unsigned long int n)
 		for (x = 6; x >= 0; x--)
 			_putchar(((n >> x) & 1) + '0');
 	}
-	else if (n <= 65536 || n <= 4294967296)
+	else if (n <= 65536)
 	{
 		for (x = 10; x >= 0; x--)
 			_putchar(((n >> x) & 1) + '0');
 	}
+	else if (n <= 16777216)
+	{
+		for (x = 14; x >= 0; x--)
+			_putchar(((n >> x) & 1) + '0');
+	}
+		else if (n <= 4294967296)
+	{
+		for (x = 18; x >= 0; x--)
+			_putchar(((n >> x) & 1) + '0');
+	}
+	
 }
 
