@@ -12,17 +12,12 @@ void print_binary(unsigned long int n)
 		_putchar(((n >> 0) & 1) + '0');
 	else if (n <= 255)
 	{
-		for (x = 7; x >= 0; x--)
+		for (x = 6; x >= 0; x--)
 			_putchar(((n >> x) & 1) + '0');
 	}
-	else if (n <= 65536)
+	else if (n <= 65536 || n <= 4294967296)
 	{
-		for (x = 15; x >= 0; x--)
-			_putchar(((n >> x) & 1) + '0');
-	}
-	else if (n <= 4294967296)
-	{
-		for (x = 31; x >= 0; x--)
+		for (x = 10; x >= 0; x--)
 			_putchar(((n >> x) & 1) + '0');
 	}
 }
