@@ -4,7 +4,7 @@
 /**
  * print_all - function that prints anything
  * @format: the string pointer which will contain format specifier
- * description: where format is a list of types of 
+ * description: where format is a list of types of
  * arguments passed to the function
 */
 void print_all(const char * const format, ...)
@@ -32,7 +32,6 @@ void print_all(const char * const format, ...)
 			ibuffer = va_arg(ap, int);
 			printf("%i", ibuffer);
 			break;
-		
 		case 's':
 			sbuffer = va_arg(ap, char *);
 			if (sbuffer == NULL)
@@ -42,7 +41,7 @@ void print_all(const char * const format, ...)
 		default:
 			break;
 		}
-		if (format[i + 1] && (format[i + 1] == 'c' || format[i + 1] == 's' 
+		if (format[i + 1] && (format[i + 1] == 'c' || format[i + 1] == 's'
 			|| format[i + 1] == 'i' || format[i + 1] == 'f'))
 			printf(", ");
 		i++;
