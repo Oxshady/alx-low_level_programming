@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 		case 's':
 			sbuffer = va_arg(ap, char *);
 			if (sbuffer == NULL)
-				printf("(nul)");
+				printf("(nil)");
 			printf("%s", sbuffer);
 			break;
 		default:
@@ -47,4 +47,5 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		i++;
 	}
+	printf("\n");
 }
