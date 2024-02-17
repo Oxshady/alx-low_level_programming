@@ -11,7 +11,7 @@ char *_strchr(char *s, char c)
 	unsigned int i = 0;
 	char *ptr;
 
-	if (c == 0)
+	if (c == '\0')
 		return (NULL);
 	while (s[i] != '\0')
 	{
