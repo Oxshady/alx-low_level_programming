@@ -21,5 +21,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (*separator && (i + 1 != n))
 			printf("%s", separator);
 	}
-	_putchar('\n');
+	printf("\n");
 }
