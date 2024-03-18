@@ -23,14 +23,14 @@ int checksum(char *str)
 */
 int main(void)
 {
-	char pass[100];
+	char pass[35];
 	int i = 0, x = 0;
 
 	srand(time(NULL));
 	do {
 		pass[i] = rand() % 94 + 33;
 		i++;
-	} while (checksum(pass) <= 2670);
+	} while (checksum(pass) <= 2670 && i < 33);
 	x = 2772 - checksum(pass);
 	if (x >= 33 && x <= 126)
 	{
