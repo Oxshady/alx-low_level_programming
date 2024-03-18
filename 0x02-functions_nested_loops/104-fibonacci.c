@@ -6,8 +6,8 @@
 */
 int main(void)
 {
-	int num1 = 1, num2 = 2, i = 2;
-	long int fibo = 0;
+	int i = 2;
+	long int fibo = 0, num1 = 1, num2 = 2;
 
 	printf("%lu, %lu", num1, num2);
 	while (i < 98)
