@@ -13,6 +13,8 @@ int main(void)
 	{
 		for (num2 = num1; num2 < 100; num2++)
 		{
+			if (num2 == 0)
+				continue;
 			putchar('0' + num1 / 10);
 			putchar('0' + num1 % 10);
 			putchar(' ');
@@ -30,3 +32,5 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
+// 00 01
