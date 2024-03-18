@@ -3,35 +3,30 @@
  * main - entry point
  * Return: zero if success
  */
+#include <stdio.h>
+
 int main(void)
 {
-	int oneX, oneY, twoX, twoY;
+	int num1, num2;
 
-	for (oneX = 0; oneX < 10; oneX++)
+	for (num1 = 0; num1 < 100; num1++)
 	{
-		for (oneY = 0; oneY < 9; oneY++)
+		for (num2 = num1; num2 < 100; num2++)
 		{
-			for (twoX = 0; twoX < 10; twoX++)
+			putchar('0' + num1 / 10);
+			putchar('0' + num1 % 10);
+			putchar(' ');
+			putchar('0' + num2 / 10);
+			putchar('0' + num2 % 10);
+
+			if (num1 != 99 || num2 != 99)
 			{
-				for (twoY = 1; twoY < 10; twoY++)
-				{
-				if ((twoX >= oneX) && (twoY > oneY))
-				{
-				putchar('0' + oneX % 10);
-				putchar('0' + oneY % 10);
-				putchar(' ');
-				putchar('0' + twoX % 10);
-				putchar('0' + twoY % 10);
-				if (!(oneX == 9 && oneY == 8))
-				{
 				putchar(',');
 				putchar(' ');
-				}
-				}
-				}
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
