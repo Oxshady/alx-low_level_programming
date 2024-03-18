@@ -7,13 +7,12 @@
 
 int main(void)
 {
-	int num1, num2;
+	int num1, num2 = 1;
 
 	for (num1 = 0; num1 < 100; num1++)
 	{
-		for (num2 = num1; num2 < 100; num2++)
+		for (num2 = 1; num2 < 100; num2++)
 		{
-			num2 += 1;
 			putchar('0' + num1 / 10);
 			putchar('0' + num1 % 10);
 			putchar(' ');
