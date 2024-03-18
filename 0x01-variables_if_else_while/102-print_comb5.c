@@ -3,30 +3,25 @@
  * main - entry point
  * Return: zero if success
  */
-#include <stdio.h>
-
 int main(void)
 {
-	int num1, num2 = 1;
+	int n1 = 0, n2 = 0;
 
-	for (num1 = 0; num1 < 100; num1++)
+	for (; n1 < 100; n1++)
 	{
-		for (num2 = 1; num2 < 100; num2++)
+		for (n2 = n1 + 1; n2 < 100; n2++)
 		{
-			putchar('0' + num1 / 10);
-			putchar('0' + num1 % 10);
+			putchar('0' + n1 / 10);
+			putchar('0' + n1 % 10);
 			putchar(' ');
-			putchar('0' + num2 / 10);
-			putchar('0' + num2 % 10);
-
-			if (num1 != 99 || num2 != 99)
+			putchar('0' + n2 / 10);
+			putchar('0' + n2 % 10);
+			if (n1 != 98)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-
-	putchar('\n');
 	return (0);
 }
