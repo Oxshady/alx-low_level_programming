@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - change the value of array by pointer
+ * Return: zero
+*/
 int main(void)
 {
 	int n;
