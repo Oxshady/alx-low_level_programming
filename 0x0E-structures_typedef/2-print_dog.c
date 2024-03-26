@@ -12,4 +12,5 @@ void print_dog(struct dog *d)
 		printf("(nil)\n");
 	else
 		printf("Name: %s\n", d->owner);
+	putchar('\n');
 }
