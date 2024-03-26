@@ -1,4 +1,8 @@
 #include "dog.h"
+/**
+ * print_dog - print the members value of dog object
+ * @d: the refrence of the dog object
+*/
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
