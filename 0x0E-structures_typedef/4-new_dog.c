@@ -6,38 +6,45 @@
  * @age: age of the object
  * @owner: name of the owner of the object
  * Return: the address of the new object
-*/
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new = malloc(sizeof(dog_t));
-	char *dname = NULL, *downer = NULL;
 
-	dname = malloc(strlen(name) + 1);
-	downer = malloc(strlen(owner) + 1);
-	if (dname)
+	if (new == NULL)
+		return (NULL);
+	char *dname = NULL;
+	char *downer = NULL;
+
+	if (name)
 	{
+		dname = malloc(strlen(name) + 1);
+		if (dname == NULL)
+		{
+			free(new);
+			return (NULL);
+		}
 		strcpy(dname, name);
 		new->name = dname;
-		free(dname);
 	}
 	else
 	{
-		free(dname);
-		free(downer);
-		return (NULL);
+		new->name = NULL;
 	}
-	if (downer)
+
+	if (owner)
 	{
+		downer = malloc(strlen(owner) + 1);
+		if (downer == NULL)
+		{
+			free(new->name), free(new);
+			return (NULL);
+		}
 		strcpy(downer, owner);
-		new->owner = owner;
-		free(downer);
+		new->owner = downer;
 	}
 	else
-	{
-		free(dname);
-		free(downer);
-		return (NULL);
-	}
+		new->owner = NULL;
 	new->age = age;
 	return (new);
 }
