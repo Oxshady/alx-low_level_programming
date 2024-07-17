@@ -8,7 +8,7 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i, idx = -1;
+	size_t i;
 
 	if (!array)
 		return (-1);
@@ -17,9 +17,8 @@ int linear_search(int *array, size_t size, int value)
 	{
 		if (array[i] == value)
 		{
-			idx = i;
-			break;
+			return (i);
 		}
 	}
-	return (idx);
+	return (-1);
 }
