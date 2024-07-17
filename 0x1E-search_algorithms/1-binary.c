@@ -23,10 +23,7 @@ int binary_search(int *array, size_t size, int value)
 		else if (value > array[middle])
 			lowest = middle + 1;
 		else
-		{
-			print_array(array, lowest, hieghst);
 			return (middle);
-		}
 	}
 	return (-1);
 }
